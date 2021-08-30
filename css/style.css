@@ -1,0 +1,47 @@
+/* Variables */
+
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url(./fonts/Butler_Webfont/);
+
+@font-face {
+  font-family: "Butler Stencil";
+  src: url("ButlerStencil-Bold.woff2") format("woff2"),
+    url("ButlerStencil-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* General CSS */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: "Butler";
+  font-weight: 800;
+  font-style: normal;
+}
+
+a{
+  font-weight: bold;
+  
+}
+
+.logo{
+  width: 80px;
+}
+
+  .logo-text{
+    padding: 1rem;
+    font-style: italic;
+  }
