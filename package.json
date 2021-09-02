@@ -1,0 +1,31 @@
+{
+  "name": "duo",
+  "version": "1.0.0",
+  "description": "pagina de duo ceramicas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioPereyra/Duo.git"
+  },
+  "keywords": [
+    "duo",
+    "ceramicas",
+    "emprendimiento",
+    "decoracion"
+  ],
+  "author": "Mario Pereyra, Jorge Santarelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarioPereyra/Duo/issues"
+  },
+  "homepage": "https://github.com/MarioPereyra/Duo#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
