@@ -37,11 +37,11 @@ h1 h2 h3 {
 
 a{
   font-weight: bold;
-  color: var(--main-color2);
+  color: var(--main-color2) !important;
 }
 
 a:hover{
-  color: #6e635e;
+  color: #6e635e !important;
 }
 
 /* Header CSS */
@@ -49,14 +49,6 @@ a:hover{
 .logo{
   width: 80px;
   margin-left: 2rem;
-}
-
-.nav-link{
-  color: var(--main-color2);
-}
-
-.nav-link:hover{
-  color: #6e635e;
 }
 
 .main-header{
