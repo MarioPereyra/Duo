@@ -1,5 +1,8 @@
 /* Variables */
-
+:root {
+  --main-color1: #fa6f39;
+  --main-color2: #ff8966;
+}
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -26,7 +29,7 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+h1 h2 h3 {
   font-family: "Butler";
   font-weight: 800;
   font-style: normal;
@@ -34,14 +37,49 @@ h1 {
 
 a{
   font-weight: bold;
-  
+  color: var(--main-color2);
 }
+
+a:hover{
+  color: #6e635e;
+}
+
+/* Header CSS */
 
 .logo{
   width: 80px;
+  margin-left: 2rem;
 }
 
-  .logo-text{
-    padding: 1rem;
-    font-style: italic;
+.nav-link{
+  color: var(--main-color2);
+}
+
+.nav-link:hover{
+  color: #6e635e;
+}
+
+.main-header{
+  background: url(../img/IMG_5380.jpg);
+  background-size: cover;
+  border-radius: 13px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+  .background-overlay{
+    background: rgba(236, 240, 241,.2);
+
+  }
+
+  .branding{
+    width: 300px;
+    opacity: .5;
+    border-radius: 50%;
+    margin: 8rem;
+    padding: 2rem;
+  }
+
+  .title{
+    letter-spacing: 8px;
   }
