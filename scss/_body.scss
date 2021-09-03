@@ -17,6 +17,13 @@ $fontTitulo: "Butler";
   font-style: normal;
 }
 
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,13 +37,17 @@ $fontTitulo: "Butler";
   color: $colorTitulo;
   font-size: 80pt;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 // SECCIONES
 
 // PORTFOLIO
+
 // NOSOTRAS
+
 .contenedorSeccion {
+  padding: 50px;
   img {
     border-radius: 20px;
     width: 50%;
@@ -46,17 +57,130 @@ $fontTitulo: "Butler";
     font-family: "OpenSans";
     font-weight: 800;
     margin: 150px;
-    font-size: 20pt;
+    font-size: 12pt;
     line-height: 40pt;
     text-align: justify;
   }
   align-items: center;
   display: flex;
 }
-.quote {
-  font-size: 130pt;
-  font-family: $fontTitulo;
+
+.blockquote {
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
 }
 
+.blockquote:before {
+  position: absolute;
+  font-family: "Butler";
+  top: 350;
+  content: "“";
+  font-size: 300pt;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+// Inicia el tema de la resolución
+
+.elDuo {
+  position: relative;
+  text-align: center;
+  font-size: 80pt;
+  font-family: $fontTitulo;
+  // left: 90px;
+  bottom: 210px;
+  margin-left: 95px;
+  .naranja {
+    color: $colorTitulo;
+  }
+  .blanco {
+    color: #ffffff;
+  }
+}
+
+// Hasta acá
+
 // CLIENTES
-// CLIENTES
+// SERVICIOS
+
+.servicios {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  img {
+    width: 50%;
+    border-radius: 20px;
+    margin-left: 30px;
+  }
+}
+
+.contenedorTextos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  h1 {
+    text-align: center;
+    font-family: "Butler";
+    font-size: 40px;
+    color: $colorTitulo;
+  }
+  p {
+    font-family: "OpenSansBold";
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+    padding-left: 30%;
+    padding-right: 30%;
+    color: $colorTitulo;
+  }
+}
+
+// CONTACTO
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 120px;
+}
+
+.linea {
+  border: $colorTitulo solid 5px;
+}
+
+.divContacto {
+  font-size: 35px;
+  font-family: "Butler";
+  color: $colorTitulo;
+  text-align: center;
+  p {
+    font-family: "OpenSans";
+    font-size: 35px;
+    line-height: 90px;
+  }
+  .negrita {
+    font-family: "OpenSansBold";
+  }
+}
+
+.mapa {
+  font-size: 35px;
+  font-family: "Butler";
+  color: $colorTitulo;
+  text-align: center;
+  h1 {
+    margin-bottom: 50px;
+  }
+}
+
+footer {
+  background-color: $colorTitulo;
+  height: 75px;
+}
+
+.contenedorDuo {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
