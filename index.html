@@ -7,47 +7,46 @@
     <!-- Bootstrap CSS -->  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
     <title>Duo Cerámicas</title>
   </head>
   <body>
     
     <!-- Navigation -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand nav-link" href="#">
-          <img src="./img/logo.png" class="logo" alt="Logo Duo Cerámicas">
-          Nuestras redes
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item me-4">
-              <a class="nav-link link" href="#">Home</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link" href="#">Porfolio</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link" href="#">Nosotras</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link" href="#">Clientes</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link " href="#">Servicios</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
-        </div>
+    <div class="container-fluid">
+      <div class="d-flex flex-column">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo.png" class="logo" alt="Logo Duo Cerámicas">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Porfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>             
+            </div>
+        </nav>
       </div>
-    </nav>
-  
+    </div>
     <!-- Header -->
 
     <header class="main-header">

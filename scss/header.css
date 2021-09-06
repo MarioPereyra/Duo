@@ -1,0 +1,62 @@
+/* Header CSS */
+.logo {
+  width: 40%;
+  margin-left: 0.2rem;
+}
+
+.main-header {
+  background: url(../img/IMG_5380.jpg);
+  background-size: cover;
+  border-radius: 13px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-header .background-overlay {
+  background: rgba(53, 53, 53, 0.2);
+}
+
+.main-header .background-overlay .branding {
+  width: 25%;
+  opacity: .5;
+  border-radius: 50%;
+  margin: 8rem;
+  padding: 2rem;
+}
+
+@media (max-width: 550px) {
+  .main-header .background-overlay .branding {
+    width: 60%;
+  }
+}
+
+@media (min-width: 551px) {
+  .main-header .background-overlay .branding {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header .background-overlay .branding {
+    width: 25%;
+  }
+}
+
+.main-header .title {
+  letter-spacing: 8px;
+}
+
+@media (max-width: 500px) {
+  .main-header .title {
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-header .title {
+    font-size: 0.4rem;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=header.css.map */
