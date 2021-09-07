@@ -30,14 +30,9 @@
         </blockquote>
         <img src="./images/imagenes duo/Image.png" alt="" />
       </div>
-      <!-- Bloque del problema -->
       <div class="elDuo">
         <span class="naranja">el</span> <span class="blanco">duo</span>
       </div>
-      <!-- Ver qué hacer con esto y como solucionarlo. Distintas resoluciones pueden romper.-->
-      <!-- No se probaron resoluciones menores porque primero quiero solucionar la mayor. -->
-      <!-- En un monitor de 1920x1080 se ve bien, pero en uno de mayor resolución rompe. -->
-      <!-- Pregunta para el Mario del futuro: ¿Hacer responsive a mayor resolución lo solucionará? -->
     </section>
     <section class="clientes">
       <h1 class="titulo">Clientes</h1>
@@ -45,7 +40,9 @@
       <!-- ¿Hacer el fondo como imagen en Photoshop? -->
     </section>
     <section class="servicios">
-      <img src="./images/imagenes duo/servicios.jpg" alt="" />
+      <div class="contenedorImagen">
+        <img class="imagen" src="./images/imagenes duo/servicios.jpg" alt="" />
+      </div>
       <div class="contenedorTextos">
         <h1>Título 1</h1>
         <p>
@@ -74,9 +71,15 @@
       <div class="linea"><pre></pre></div>
       <div class="mapa">
         <h1>estamos aquí</h1>
-        <!-- Buscar como agregar el mapa y todo eso. -->
-        <!-- Por ahora una imagen para el modelo. -->
-        <img src="./images/imagenes duo/test.png" alt="" />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2744205756153!2d-58.40737244893684!3d-34.59722166456601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca91ce32fb8d%3A0x8722ca724e830a88!2sParaguay%20%26%20Ecuador%2C%20C1176%20CABA!5e0!3m2!1ses!2sar!4v1630974514214!5m2!1ses!2sar"
+          width="400"
+          height="300"
+          class="googleMaps"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
     </section>
 

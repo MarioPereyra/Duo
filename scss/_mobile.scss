@@ -1,0 +1,234 @@
+// RESPONSIVE
+
+@media only screen and (min-width: 1024px) {
+  //   NOSOTRAS
+  .contenedorSeccion {
+    padding: 10px;
+    img {
+      border-radius: 20px;
+      width: 50%;
+    }
+    p {
+      color: $colorTitulo;
+      font-family: "OpenSans";
+      font-weight: 800;
+      margin: 10px;
+      font-size: 13pt;
+      padding-left: 20px;
+      line-height: 35pt;
+      text-align: justify;
+    }
+    display: flex;
+    align-items: center;
+  }
+
+  .blockquote {
+    padding-left: 5%;
+    padding-right: 15%;
+    position: relative;
+  }
+
+  .blockquote:before {
+    position: absolute;
+    font-family: "Butler";
+    top: -110px;
+    content: "“";
+    font-size: 250pt;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  .elDuo {
+    position: relative;
+    text-align: center;
+    font-size: 70pt;
+    font-family: $fontTitulo;
+    bottom: 110px;
+    margin-left: 95px;
+    .naranja {
+      color: $colorTitulo;
+    }
+    .blanco {
+      color: #ffffff;
+    }
+  }
+}
+
+// TABLETS
+
+@media only screen and (max-width: 768px) {
+  //   NOSOTRAS
+
+  .contenedorSeccion {
+    padding: 10px;
+    img {
+      border-radius: 20px;
+      width: 50%;
+    }
+    p {
+      color: $colorTitulo;
+      font-family: "OpenSans";
+      font-weight: 800;
+      margin: 2px;
+      font-size: 10pt;
+      padding-left: 5px;
+      line-height: 20pt;
+      text-align: justify;
+    }
+    display: flex;
+    align-items: center;
+  }
+
+  .blockquote {
+    padding-left: 5%;
+    padding-right: 15%;
+    position: relative;
+  }
+
+  .blockquote:before {
+    position: absolute;
+    font-family: "Butler";
+    top: -60px;
+    content: "“";
+    font-size: 150pt;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  .elDuo {
+    position: relative;
+    text-align: center;
+    font-size: 50pt;
+    font-family: $fontTitulo;
+    bottom: 130px;
+    margin-left: 65px;
+    .naranja {
+      color: $colorTitulo;
+    }
+    .blanco {
+      color: #ffffff;
+    }
+  }
+  //   SERVICIOS
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .imagen {
+    width: 70%;
+    border-radius: 20px;
+  }
+
+  .contenedorImagen {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedorTextos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    h1 {
+      text-align: center;
+      font-family: "Butler";
+      font-size: 40px;
+      color: $colorTitulo;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: "OpenSansBold";
+      font-weight: 400;
+      line-height: 30px;
+      text-align: justify;
+      padding-left: 30%;
+      padding-right: 30%;
+      color: $colorTitulo;
+    }
+  }
+
+  //   CONTACTO
+  .contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .linea {
+    border: 1px solid #d86745;
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .derechos {
+    text-align: center;
+    font-size: medium;
+  }
+}
+
+// TELÉFONOS
+
+@media only screen and (max-width: 320px) {
+  //   NOSOTRAS
+  .titulo {
+    font-size: 10pt;
+  }
+  .contenedorSeccion {
+    padding: 0px;
+    img {
+      border-radius: 20px;
+      width: 95%;
+    }
+    p {
+      color: $colorTitulo;
+      font-family: "OpenSans";
+      font-weight: 800;
+      margin: 30px;
+      font-size: 12pt;
+      line-height: 25pt;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .blockquote {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .blockquote:before {
+    top: -60px;
+    font-size: 150pt;
+  }
+  .elDuo {
+    font-size: 50pt;
+    bottom: 75px;
+    margin-left: 10px;
+  }
+
+  //   SERVICIOS
+
+  .imagen {
+    margin: 0;
+    width: 95%;
+  }
+
+  .contenedorTextos {
+    p {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+  //   CONTACTO
+  .googleMaps {
+    width: 95%;
+  }
+  .derechos {
+    font-size: small;
+  }
+}
