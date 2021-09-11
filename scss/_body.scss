@@ -34,9 +34,20 @@ $fontTitulo: "Butler";
 .titulo {
   font-family: $fontTitulo;
   color: $colorTitulo;
-  font-size: 80pt;
+  font-size: 60pt;
   text-align: center;
   margin-bottom: 80px;
+}
+.subt {
+  font-family: $fontTitulo;
+  color: $colorTitulo;
+  font-size: 50pt;
+  text-align: center;
+  margin-bottom: 80px;
+  position: absolute;
+  top: 1275px;
+  left: 900px;
+  opacity: 0.4;
 }
 
 // SECCIONES
@@ -102,16 +113,17 @@ $fontTitulo: "Butler";
   margin-bottom: 100px;
 }
 .contenedorImagen {
-  margin-left: 100px;
+  margin-left: 10px;
 }
 .imagen {
-  width: 120%;
+  width: 190%;
   border-radius: 20px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .contenedorTextos {
   display: flex;
+  margin-left: 400px;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -126,8 +138,8 @@ $fontTitulo: "Butler";
     font-weight: 400;
     line-height: 30px;
     text-align: justify;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 25%;
+    padding-right: 25%;
     color: $colorTitulo;
   }
 }
@@ -143,6 +155,7 @@ $fontTitulo: "Butler";
 
 .linea {
   border: $colorTitulo solid 5px;
+  background-color: $colorTitulo;
 }
 
 .divContacto {
@@ -195,7 +208,12 @@ footer {
 
 // ======================================================
 .carousel {
-  background: white;
+  background: linear-gradient(to right, #d86745, #d8674575),
+    url("../images/imagenes\ duo/IMG_8955.jpg");
+  background-size: cover;
+  margin-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .carousel-cell {
@@ -225,6 +243,16 @@ footer {
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s,
     -webkit-filter 0.3s, filter 0.3s;
   transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  border-radius: 20px;
+}
+
+.carousel-cell p {
+  color: white;
+  line-height: 29pt;
+  margin-right: 150px;
+  font-size: 14pt;
+  text-align: justify;
+  font-family: "OpenSans";
 }
 
 /* brighten selected image */
