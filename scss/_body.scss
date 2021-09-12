@@ -104,7 +104,6 @@ $fontTitulo: "Butler";
   }
 }
 
-// CLIENTES
 // SERVICIOS
 
 .servicios {
@@ -206,11 +205,12 @@ footer {
   color: #0000009f;
 }
 
-// ======================================================
+// CLIENTES
+
 .carousel {
-  background: linear-gradient(to right, #d86745, #d8674575),
-    url("../images/imagenes\ duo/IMG_8955.jpg");
-  background-size: cover;
+  background: linear-gradient(to right, #d86745, #d867455b),
+    url(http://static.colourlovers.com/images/patterns/50/50713.png?1204572246);
+
   margin-bottom: 150px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -250,13 +250,34 @@ footer {
   color: white;
   line-height: 29pt;
   margin-right: 150px;
-  font-size: 14pt;
+  font-size: 16pt;
   text-align: justify;
   font-family: "OpenSans";
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s,
+    -webkit-filter 0.3s, filter 0.3s;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  border-radius: 20px;
 }
 
 /* brighten selected image */
 .carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-filter: none;
+  filter: none;
+}
+
+.carousel-cell.is-selected p {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -304,10 +325,6 @@ footer {
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
-}
-
-.portfolio {
-  margin-bottom: 150px;
 }
 
 // ======================================================
