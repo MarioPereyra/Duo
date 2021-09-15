@@ -25,7 +25,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 h2 h3 {
+h1 h2 h3 h4 {
   font-family: "Butler";
   font-weight: 800;
   font-style: normal;
@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  color: white !important;
+  color: #373636 !important;
 }
 
 /* Header CSS */
@@ -68,12 +68,27 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 @media (max-width: 550px) {
   .menu {
-    width: 60px;
+    width: 70px;
+  }
+}
+
+.menu-title {
+  color: var(--main-color1);
+  font-weight: bold;
+  padding-top: 0.7rem;
+  margin-top: 0.9rem;
+  margin-left: 6rem;
+}
+
+@media (max-width: 1024px) {
+  .menu-title {
+    font-size: 1rem;
+    margin-top: 0.7rem;
   }
 }
 
@@ -83,7 +98,7 @@ a:hover {
 
 @media (max-width: 550px) {
   .menu-closed {
-    height: 60px;
+    height: 70px;
   }
 }
 
@@ -180,12 +195,16 @@ a:hover {
 .background-overlay {
   background: rgba(53, 53, 53, 0.2);
   border-radius: 13px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .background-overlay .main-header {
   background: url(../img/img_header.jpg);
   background-size: cover;
   border-radius: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .background-overlay .main-header .branding {
