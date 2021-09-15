@@ -32,11 +32,13 @@ h1 h2 h3 {
 }
 
 a {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
   font-weight: bold;
-  color: var(--main-color2) !important;
+  color: var(--main-color1) !important;
 }
 
 a:hover {
-  color: #6e635e !important;
+  color: white !important;
 }
 /*# sourceMappingURL=general.css.map */

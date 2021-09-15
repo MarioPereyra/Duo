@@ -15,13 +15,24 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-top: 5px;
+
+    @media (max-width: 550px){
+      width: 60px;
+    }
+
 }
 
-.menu--closed{
+.menu-closed{
   height: 70px;
+
+  @media (max-width: 550px){
+    height: 60px;
+  }
+
 }
 
-.menu--open{
+.menu-open{
   height: 400px;
 }
 
@@ -34,13 +45,14 @@
   align-items: center;
   top: 1px;
   opacity: 1;
+
 }
 
 .button:hover {
   opacity: 0.6;
 }
 
-.menu--open .button{
+.menu-open .button{
   transform-origin: center;
   transform: rotate(90deg);
 }
@@ -63,22 +75,30 @@
   transform: scale(0.8);
 }
 
-.tools--hidden{
+.tools-hidden{
   margin-top: 400px;
   z-index: -100;
 }
 
-.tools--visible{
+.tools-visible{
   margin-top: 40%;
   z-index: 100;
+}
+
+.menu-text{
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-bottom: -2rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .main-header{
   background: url(../img/img_header.jpg);
   background-size: cover;
   border-radius: 13px;
-  margin-left: 10px;
-  margin-right: 10px;
 
   .background-overlay{
     background: rgba(53, 53, 53, 0.2);

@@ -10,10 +10,10 @@ $(document).ready(function() {
     };
 
     Menu.button.click(function () {
-        Menu.body.toggleClass('menu--closed');
-        Menu.body.toggleClass('menu--open');
-        Menu.tools.toggleClass('tools--visible');
-        Menu.tools.toggleClass('tools--hidden');
+        Menu.body.toggleClass('menu-closed');
+        Menu.body.toggleClass('menu-open');
+        Menu.tools.toggleClass('tools-visible');
+        Menu.tools.toggleClass('tools-hidden');
     });
 
 
