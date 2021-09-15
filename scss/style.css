@@ -1,6 +1,6 @@
 /* General CSS */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url(../fonts/Butler_Webfont/);
+@import url(../fonts/Butler_Webfont/stylesheet.css);
 :root {
   --main-color1: #fa6f39;
   --main-color2: #ff8966;
@@ -177,18 +177,18 @@ a:hover {
   letter-spacing: 3px;
 }
 
-.main-header {
+.background-overlay {
+  background: rgba(53, 53, 53, 0.2);
+  border-radius: 13px;
+}
+
+.background-overlay .main-header {
   background: url(../img/img_header.jpg);
   background-size: cover;
   border-radius: 13px;
 }
 
-.main-header .background-overlay {
-  background: rgba(53, 53, 53, 0.2);
-  border-radius: 13px;
-}
-
-.main-header .background-overlay .branding {
+.background-overlay .main-header .branding {
   width: 25%;
   opacity: .5;
   border-radius: 50%;
@@ -197,36 +197,37 @@ a:hover {
 }
 
 @media (max-width: 550px) {
-  .main-header .background-overlay .branding {
+  .background-overlay .main-header .branding {
     width: 60%;
   }
 }
 
 @media (min-width: 551px) {
-  .main-header .background-overlay .branding {
+  .background-overlay .main-header .branding {
     width: 40%;
   }
 }
 
 @media (min-width: 1440px) {
-  .main-header .background-overlay .branding {
+  .background-overlay .main-header .branding {
     width: 25%;
   }
 }
 
-.main-header .title {
+.background-overlay .main-header .title {
   letter-spacing: 8px;
+  text-shadow: 3px 3px 3px #373636;
 }
 
 @media (max-width: 500px) {
-  .main-header .title {
+  .background-overlay .main-header .title {
     font-size: 0.5rem;
     font-weight: bold;
   }
 }
 
 @media (max-width: 320px) {
-  .main-header .title {
+  .background-overlay .main-header .title {
     font-size: 0.4rem;
     font-weight: bold;
   }

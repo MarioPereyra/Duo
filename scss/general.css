@@ -1,6 +1,6 @@
 /* General CSS */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url(../fonts/Butler_Webfont/);
+@import url(../fonts/Butler_Webfont/stylesheet.css);
 :root {
   --main-color1: #fa6f39;
   --main-color2: #ff8966;
