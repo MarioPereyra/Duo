@@ -42,32 +42,37 @@
           <h5 class="menu-title">Nuestras redes</h5>
         </div>
         <div class="col-6">
-          <nav class="navbar navbar-expand-lg navbar-light position-absolute top-0 end-0 mt-3 pt-4 me-3">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <nav class="navbar navbar-expand-lg navbar-light .navbar-expand-lg justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item me-3">
-                  <a class="nav-link link" href="#">Home</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link" href="#">Porfolio</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link" href="#">Nosotras</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link" href="#">Clientes</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link " href="#">Servicios</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link" href="#">Contacto</a>
-                </li>
-              </ul>             
-            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">¡Somos Duo!</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Porfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+            </div>          
           </nav>
         </div>
       </div>            

@@ -18,7 +18,7 @@
   margin-top: 0px;
 
     @media (max-width: 550px){
-      width: 70px;
+      width: 60px;
     }
 
 }
@@ -26,13 +26,14 @@
 .menu-title{
   color: var(--main-color1);
   font-weight: bold;
-  padding-top: 0.7rem;
-  margin-top: 0.9rem;
+  padding-top: 0.3rem;
+  margin-top: 0.8rem;
   margin-left: 6rem;
 
-  @media (max-width: 1024px){
-    font-size: 1rem;
+  @media (max-width: 523px){
+    font-size: 0.8rem;
     margin-top: 0.7rem;
+    margin-left: 5rem;
   }
 
 }
@@ -41,7 +42,7 @@
   height: 70px;
 
   @media (max-width: 550px){
-    height: 70px;
+    height: 60px;
   }
 
 }
@@ -109,6 +110,11 @@
   letter-spacing: 3px;
 }
 
+.offcanvas-title{
+  color: #e94e10;
+  font-weight: bold;
+  font-style: italic;
+}
 
 .background-overlay{
     background: rgba(53, 53, 53, 0.2);
