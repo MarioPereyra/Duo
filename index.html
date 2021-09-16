@@ -4,15 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Flickity CSS  -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
-    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/icons/favicon.png">
     <title>Duo Cerámicas</title>
   </head>
   <body>
-    <section class="nosotras">
+
+    <!-- Navigation -->
+    <div class="container-fluid mb-5">
+      <div class="row mt-4">
+        <div class="col-6">
+          <div class="menu menu-closed position-absolute ms-3">
+            <div class="button">
+              <img src="./images/imagenes_duo/logo.png" class="logo" alt="Duo Logo">
+            </div> 
+            <div class="tools tools-hidden">
+                <!-- Instagram icon -->
+                <a href="#">
+                  <img class="icon pen" width="32" height="32" src="./images/icons/instagram.svg">
+                </a>    
+                <!-- Facebook icon -->
+                <a href="#">
+                  <img class="icon trash" width="32" height="32" src="./images/icons/facebook.svg">
+                </a>    
+                <!-- Linkedin icon -->
+                <a href="#">
+                  <img class="icon hidden" width="32" height="32" src="./images/icons/linkedin.svg">
+                </a>
+                <p class="menu-text">¡Seguinos!</p>
+            </div>
+          </div>
+          <h5 class="menu-title">Nuestras redes</h5>
+        </div>
+        <div class="col-6">
+          <nav class="navbar navbar-expand-lg navbar-light navbar-expand-xl justify-content-end me-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">¡Somos Duo!</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link link" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Porfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#nosotras">Nosotras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#clientes">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#servicios">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+            </div>          
+          </nav>
+        </div>
+      </div>            
+    </div>
+
+    <!-- Header -->
+    <header class="background-overlay" id="header">
+      <div class="main-header">
+        <div class="container-fluid">        
+          <div class="row">
+            <div class="col-md-12">
+              <img src="./images/imagenes_duo/branding.jpeg" class="branding mx-auto d-block" alt="Duo Branding">
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-white">
+              <h2 class="float-left title">Encontramos la <b>felicidad,</b></h2>
+              <h3 class="float-left title"><i>en las <b>pequeñas cosas.</i></b></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Portfolio -->
+    <section class="container-fluid portfolio mt-5" id="portfolio">
+      <div class="row">
+        <div class="col-12"> 
+          <div class="carousel-1 mt-2" data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell-1">           
+              <img src="./images/imagenes_duo/port_01.jpg" class="img-fluid" alt="imagen portfolio">
+            </div>
+            <div class="carousel-cell-1">       
+              <img src="./images/imagenes_duo/port_02.jpeg" class="img-fluid" alt="imagen portfolio">
+            </div>
+            <div class="carousel-cell-1">  
+              <img src="./images/imagenes_duo/port_03.jpg" class="img-fluid" alt="imagen portfolio">
+            </div>
+            <div class="carousel-cell-1">      
+              <img src="./images/imagenes_duo/port_04.jpg" class="img-fluid" alt="imagen portfolio">
+            </div>
+            <div class="carousel-cell-1"> 
+              <img src="./images/imagenes_duo/port_05.jpeg" class="img-fluid" alt="imagen portfolio">
+            </div>
+            <div class="carousel-cell-1"> 
+              <img src="./images/imagenes_duo/port_06.jpg" class="img-fluid" alt="imagen portfolio">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotras -->
+    <section class="nosotras" id="nosotras">
       <div class="contenedorSeccion">
         <blockquote class="blockquote">
           <p>
@@ -25,12 +140,14 @@
           </p>
           <p class="bienvenida">¡Te damos la bienvenida!</p>
         </blockquote>
-        <img src="./images/imagenes duo/Image.png" alt="Nosotras" />
+        <img src="./images/imagenes_duo/Image.png" alt="Nosotras" />
       </div>
       <div class="elDuo">
         <span class="naranja">el</span> <span class="blanco">duo</span>
       </div>
     </section>
+
+    <!-- Clientes -->
     <section class="clientes">
       <div class="carouselClientes">
         <div class="carousel js-flickity">
@@ -41,7 +158,7 @@
             </p>
             <img
               class="img"
-              src="./images/imagenes duo/pub1.jpg"
+              src="./images/imagenes_duo/pub1.jpg"
               alt="Publicación Instagram 1"
             />
           </div>
@@ -49,7 +166,7 @@
             <p class="quote2">Excelente!! Armonía en diseño y color... 👏👏</p>
             <img
               class="img"
-              src="./images/imagenes duo/pub2.jpg"
+              src="./images/imagenes_duo/pub2.jpg"
               alt="Publicación Instagram 2"
             />
           </div>
@@ -58,18 +175,20 @@
             <img
               class="img"
               id="tres"
-              src="./images/imagenes duo/pub3.jpg"
+              src="./images/imagenes_duo/pub3.jpg"
               alt="Publicación Instagram 3"
             />
           </div>
         </div>
       </div>
     </section>
-    <section class="servicios">
+
+    <!-- Servicios -->
+    <section class="servicios" id="servicios">
       <div class="contenedorImagen" id="objetfit">
         <img
           class="imagen"
-          src="./images/imagenes duo/servicios.jpg"
+          src="./images/imagenes_duo/servicios.jpg"
           alt="Servicios"
         />
       </div>
@@ -84,7 +203,9 @@
         <p>De nuestra casa, a la tuya.</p>
       </div>
     </section>
-    <section class="contacto">
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
       <div class="divContacto">
         <h1>Contacto</h1>
         <br />
@@ -107,6 +228,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
       <div class="contenedorDuo">
         <p class="marca">duo</p>
@@ -115,7 +237,13 @@
         </p>
       </div>
     </footer>
-    <script src="./app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./app.js"></script>    
   </body>
 </html>
