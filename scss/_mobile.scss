@@ -96,8 +96,8 @@
     text-align: center;
     font-size: 50pt;
     font-family: $fontTitulo;
-    bottom: 80px;
-    margin-left: 65px;
+    bottom: 95px;
+    margin-left: 30px;
     .naranja {
       color: $colorTitulo;
     }
@@ -189,7 +189,7 @@
 
 // TELÉFONOS
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 426px) {
   //   NOSOTRAS
   .titulo {
     font-size: 10pt;
