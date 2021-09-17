@@ -466,8 +466,8 @@ footer {
       color: #d86745;
       font-family: "OpenSans";
       font-weight: 800;
-      margin: 10px;
-      font-size: 13pt;
+      margin: auto;
+      font-size: 20pt;
       padding-left: 20px;
       line-height: 45pt;
       text-align: justify; }
@@ -493,6 +493,50 @@ footer {
       color: #d86745; }
     .elDuo .blanco {
       color: #ffffff; } }
+
+@media only screen and (max-width: 1600px) {
+  .contenedorSeccion img {
+    width: 49%; }
+  .contenedorSeccion p {
+    margin: 2px;
+    font-size: 20pt;
+    padding-left: 5px;
+    line-height: 42pt; }
+  .elDuo {
+    font-size: 50pt;
+    bottom: 90px;
+    margin-left: auto; } }
+
+@media only screen and (max-width: 1200px) {
+  .contenedorSeccion {
+    padding: 5px; }
+    .contenedorSeccion img {
+      width: 40%; }
+    .contenedorSeccion p {
+      margin: 2px;
+      font-size: 15pt;
+      padding-left: 5px;
+      line-height: 32pt; }
+  .elDuo {
+    font-size: 50pt;
+    bottom: 85px;
+    margin-left: 230px; } }
+
+@media only screen and (max-width: 2560px) {
+  .contenedorSeccion {
+    padding: 5px; }
+    .contenedorSeccion img {
+      width: 50%;
+      margin-right: 35px; }
+    .contenedorSeccion p {
+      margin: 2px;
+      font-size: 15pt;
+      padding-left: 5px;
+      line-height: 32pt; }
+  .elDuo {
+    font-size: 50pt;
+    bottom: 85px;
+    margin-left: auto; } }
 
 @media only screen and (max-width: 768px) {
   .contenedorSeccion {
