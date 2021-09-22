@@ -18,8 +18,12 @@
       line-height: 45pt;
       text-align: justify;
     }
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .blockquote {
@@ -133,8 +137,12 @@
       line-height: 20pt;
       text-align: justify;
     }
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .blockquote {
@@ -167,20 +175,30 @@
   }
   //   SERVICIOS
   .servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 100px;
   }
 
   .contenedorImagen {
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #objetfit img {
     width: 768px;
     height: 290px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-color: black;
   }
   .imagen {
@@ -191,10 +209,19 @@
 
   .contenedorTextos {
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     h1 {
       text-align: center;
       font-family: "Butler";
@@ -216,8 +243,13 @@
 
   //   CONTACTO
   .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .linea {
     border: 1px solid #d86745;
@@ -271,10 +303,18 @@
       text-align: justify;
       margin-bottom: 30px;
     }
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .blockquote {
@@ -302,7 +342,8 @@
   #objetfit img {
     width: 768px;
     height: 150px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-color: black;
   }
 
